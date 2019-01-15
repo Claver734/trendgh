@@ -1,1 +1,27 @@
 body{margin: 0; padding: 0;}
+.form-body{
+  text-align: center;
+}
+.counter{
+  height: 30px;
+  width: 30px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin-right: 200px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.counter::before{
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #ccc;
+  width: 210px;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.counter:last-child::before{display: none;}
